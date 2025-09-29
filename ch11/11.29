@@ -1,0 +1,3 @@
+upper_bound返回指向第一个大于关键字类型的元素,如果都小则返回end()
+lower_bound返回指向第一个大于关键字类型的元素,如果都小则返回end()
+equal_range返回一个pair<a,b>迭代器a,b均指向尾元素后一个元素
