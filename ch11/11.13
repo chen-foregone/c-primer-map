@@ -1,2 +1,0 @@
-record.emplace(str,num),record.push_back({str,num))
-列表初始化构造较为直接
