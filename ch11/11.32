@@ -1,0 +1,29 @@
+#include<map>
+#include<set>
+#include<vector>
+#include<string>
+#include<iostream>
+using std::string;
+int main()
+{
+    std::multimap<string, string>books;
+    books.insert({ "Barth, John", "Sot-Weed Factor" });
+    books.insert({ "Barth, John", "Lost in the Funhouse" });
+    books.insert({ "jinyong", "xiaoaojianghu" });
+    books.insert({ "jinyong", "tianlongbabu" });
+    books.insert({ "jinyong", "shediaoyingxiongzhuan" });
+    std::map<string, std::multiset<string>> find;
+    for (auto& book : books)
+    {
+        find[book.first].insert(book.second);
+    }
+    for (auto beg = find.begin(); beg != find.end(); beg++)
+    {
+        std::cout << beg->first << ":";
+        for (auto t : beg->second)
+        {
+            std::cout << t<<" ";
+        }
+        std::cout << "\n";
+    }
+}
