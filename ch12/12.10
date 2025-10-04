@@ -1,1 +1,1 @@
-shared_ptr<int> process(shared_ptr<int>q(p))
+可以运行
