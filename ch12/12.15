@@ -11,3 +11,4 @@ int main()
 {
 	shared_ptr<conection>manage((conection*)malloc(sizeof(conection)), [](conection* con){ free(con); });
 }
+
